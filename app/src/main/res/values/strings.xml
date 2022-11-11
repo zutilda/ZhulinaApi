@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ZhulinaAPi</string>
+    <string name="addData">Добавить запись</string>
+    <string name="day">День недели</string>
+    <string name="workout">Тренировка</string>
+    <string name="trainer">Тренер</string>
+    <string name="photo">Фото</string>
+    <string name="add">Добавить</string>
+    <string name="back">Назад</string>
+    <string name="safe">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="deleteImage">Удалить фото</string>
+    <string name="sort">Сортировка:</string>
+    <string-array name="spinnerItems">
+        <item>нет</item>
+        <item>по дню недели</item>
+        <item>по тренировке</item>
+        <item>по тренеру</item>
+    </string-array>
+</resources>
