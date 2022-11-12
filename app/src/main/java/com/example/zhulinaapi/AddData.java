@@ -33,7 +33,6 @@ public class AddData extends AppCompatActivity implements View.OnClickListener {
     TextView txttrainer;
     ImageView imageView;
     String image;
-Mask mask1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,7 +121,7 @@ Mask mask1;
         call.enqueue(new Callback<Mask>() {
             @Override
             public void onResponse(Call<Mask> call, Response<Mask> response) {
-                Toast.makeText(AddData.this, "Товар успешно добавлен", Toast.LENGTH_LONG).show();
+                Toast.makeText(AddData.this, "Информация добавлена", Toast.LENGTH_LONG).show();
                 txtday.setText("");
                 txtday.clearFocus();
                 txtwotkout.setText("");

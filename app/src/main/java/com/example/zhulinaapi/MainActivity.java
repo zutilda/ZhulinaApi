@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(Void... voids) {
 
             try {
-                URL url = new URL("https://ngknn.ru:5001/NGKNN/ЖулинаАА/api/ModelWorkouts");
+                URL url = new URL("https://ngknn.ru:5001/NGKNN/ЖулинаАА/api/Workouts");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

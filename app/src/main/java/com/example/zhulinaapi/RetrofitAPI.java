@@ -9,13 +9,13 @@ import retrofit2.http.Query;
 
 public interface RetrofitAPI {
 
-    @POST("ModelWorkouts/")
+    @POST("Workouts/")
     Call<Mask> createPost(@Body Mask mask);
 
-    @PUT("ModelWorkouts/{id}")
+    @PUT("Workouts/{id}")
     Call<Mask> updateData(@Query("id") int id, @Body Mask mask);
 
-    @DELETE("ModelWorkouts/{id}")
+    @DELETE("Workouts/{id}")
     Call<Mask> deleteData(@Query("id") int id);
 
 }

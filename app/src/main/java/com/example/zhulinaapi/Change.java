@@ -35,7 +35,7 @@ public class Change extends AppCompatActivity implements View.OnClickListener {
     TextView txttrainer;
     ImageView imageView;
     String image;
-    int id;
+    int Id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,12 +100,12 @@ public class Change extends AppCompatActivity implements View.OnClickListener {
                 String wotkout = txtwotkout.getText().toString();
                 String trainer = txttrainer.getText().toString();
 
-                putData(id, day, wotkout, trainer, image);
+                putData(Id, day, wotkout, trainer, image);
                 break;
 
             case R.id.btnDel:
 
-                deleteData(id);
+                deleteData(Id);
                 new Handler().postDelayed(() -> startActivity(
                         new Intent(Change.this, MainActivity.class)), 200);
                 break;
@@ -115,10 +115,10 @@ public class Change extends AppCompatActivity implements View.OnClickListener {
     }
     private void setData() {
         Bundle arg = getIntent().getExtras();
-        id = arg.getInt("id");
+        Id = arg.getInt("id");
         txtday.setText(arg.getString("day"));
-        txtwotkout.setText(arg.getString(("wotkout")));
-        txttrainer.setText(arg.getString(("trainer")));
+        txtwotkout.setText(arg.getString("wotkout"));
+        txttrainer.setText(arg.getString("trainer"));
         image = arg.getString("image");
         imageView.setImageBitmap(getImgBitmap(image));
     }
